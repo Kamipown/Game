@@ -10,9 +10,9 @@ CC = g++
 
 # FLAGS
 ifeq ($(MODE), debug)
-FLAGS = -Wall -Wextra -Werror -g
+FLAGS = -std=c++17 -Wall -Wextra -Werror -g
 else
-FLAGS = -Wall -Wextra -Werror
+FLAGS = -std=c++17 -Wall -Wextra -Werror
 endif
 
 # DIRECTORIES
@@ -29,7 +29,7 @@ else
 OUT_EXT =
 endif
 
-FILES =	main
+FILES =	main Game SDL2_Manager Vector2
 
 SRC = $(addprefix $(SRC_DIR)/, $(addsuffix $(SRC_EXT), $(FILES)))
 OBJ = $(addprefix $(OBJ_DIR)/, $(addsuffix $(OBJ_EXT), $(FILES)))
