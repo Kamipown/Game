@@ -29,7 +29,10 @@ else
 OUT_EXT =
 endif
 
-FILES =	main Game SDL2_Manager Vector2
+FILES =	main \
+		engine/Engine \
+		game/Game \
+		Vector2
 
 SRC = $(addprefix $(SRC_DIR)/, $(addsuffix $(SRC_EXT), $(FILES)))
 OBJ = $(addprefix $(OBJ_DIR)/, $(addsuffix $(OBJ_EXT), $(FILES)))

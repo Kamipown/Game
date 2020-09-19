@@ -1,15 +1,28 @@
 #define SDL_MAIN_HANDLED
 
 #include <cstdlib>
-#include "Game.hpp"
+
+#include "engine/Engine.hpp"
+#include "game/Game.hpp"
 
 using namespace std;
+
+static void start()
+{
+	Game game;
+}
 
 int main(int argc, char **argv)
 {
 	(void)argc;
 	(void)argv;
-	Game game;
+	Engine engine;
+
+	if (engine.init())
+	{
+		start();
+		engine.quit();
+	}
 	system("pause");
 	return (0);
 }

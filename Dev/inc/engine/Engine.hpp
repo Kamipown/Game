@@ -1,6 +1,6 @@
 #pragma once
 
-class SDL2_Manager
+class Engine
 {
 public:
 	bool init(void);

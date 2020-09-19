@@ -1,4 +1,4 @@
-#include "SDL2_Manager.hpp"
+#include "engine/Engine.hpp"
 
 #include <iostream>
 #include <SDL2/SDL.h>
@@ -50,13 +50,13 @@ static bool init_sdl2_ttf(void)
 }
 
 // Initialize SDL2, SDL2_image, SDL2_mixer, SDL2_ttf
-bool SDL2_Manager::init(void)
+bool Engine::init(void)
 {
 	return (init_sdl2() && init_sdl2_image() && init_sdl2_mixer() && init_sdl2_ttf());
 }
 
 // Quit SDL2, SDL2_image, SDL2_mixer, SDL2_ttf
-void SDL2_Manager::quit(void)
+void Engine::quit(void)
 {
 	SDL_Quit();
 	IMG_Quit();
