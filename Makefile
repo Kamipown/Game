@@ -31,6 +31,7 @@ endif
 
 FILES =	main \
 		engine/Engine \
+		engine/Config \
 		game/Game \
 		Vector2
 

@@ -5,8 +5,6 @@
 #include "engine/Engine.hpp"
 #include "game/Game.hpp"
 
-using namespace std;
-
 static void start()
 {
 	Game game;

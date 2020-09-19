@@ -4,7 +4,9 @@
 
 Game::Game(void)
 {
-	std::cout << "Game !" << std::endl;
+	this->config.parse("game.config");
+	this->config.log();
+	this->config.save();
 }
 
 Game::~Game(void)
