@@ -32,6 +32,7 @@ endif
 FILES =	main \
 		engine/Engine \
 		engine/Config \
+		engine/Window \
 		game/Game \
 		Vector2
 

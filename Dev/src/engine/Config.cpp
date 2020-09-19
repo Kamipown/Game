@@ -5,9 +5,9 @@
 
 Config::Config(void)
 {
-	this->dictionnary["fullscreen"] = "false";
-	this->dictionnary["res_x"] = "1920";
-	this->dictionnary["res_y"] = "1080";
+	this->dictionnary["window_fullscreen"] = "false";
+	this->dictionnary["window_width"] = "1920";
+	this->dictionnary["window_height"] = "1080";
 }
 
 Config::~Config(void)
